@@ -1,4 +1,5 @@
 {
+  "homepage": "https://iuliiavinogradova.github.io/my-project",
   "name": "my-project",
   "version": "0.1.0",
   "private": true,
@@ -6,7 +7,9 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
   },
   "dependencies": {
     "@next/font": "13.1.1",
@@ -19,6 +22,7 @@
     "react": "18.2.0",
     "react-dom": "18.2.0",
     "react-icons": "^4.7.1",
+    "sharp": "^0.31.3",
     "typescript": "4.9.4"
   },
   "devDependencies": {
